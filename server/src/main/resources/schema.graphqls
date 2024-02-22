@@ -1,0 +1,8 @@
+type Query {
+    hello: String!
+}
+
+type Subscription {
+    time(delayMillis: Int! = 1000): String!
+    count(from: Int!, to: Int!, delayMillis: Int! = 1000): Int
+}

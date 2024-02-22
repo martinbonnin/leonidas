@@ -6,3 +6,7 @@ pluginManagement {
     }
   }
 }
+
+include(":terraform", ":server")
+includeBuild("build-logic")
+includeBuild("../apollo-kotlin")
